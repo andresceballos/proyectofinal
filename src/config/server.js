@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const morgan = require('morgan');
-const newsRoutes = require('../app/routes/news');
+const newsRoutes = require('../app/routes/usuario_eps');
 const usersRoutes = require('../app/routes/users');
 
 const app = express();

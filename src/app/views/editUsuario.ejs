@@ -1,0 +1,27 @@
+<% include header %>
+<div class="row">
+    <div class="col-md-6 mt-4 card" style="margin:auto">
+        <form class="card-body" action="/crud/update/<%= crud.id_usuario %>" method="post">
+            <h3 class="card-title" style="text-align: center">Actualizar datos de usuarios</h3>
+            <div class="form-group">
+                <input name="nombre" type="text" class="form-control" value="<%= crud.nombre %>">
+            </div>
+            <div class="form-group">
+                <input name="edad" type="text" class="form-control" value="<%= crud.edad %>">
+            </div>
+            <div class="form-group">
+                <input name="telefono" type="text" class="form-control" value="<%= crud.telefono %>">
+            </div>
+            <div class="form-group">
+                <input name="ciudad" type="text" class="form-control" value="<%= crud.ciudad %>">
+            </div>
+            <div class="form-group">
+                <input name="eps" type="text" class="form-control" value="<%= crud.eps %>">
+            </div>
+            <div style="text-align: center">
+                <button type="submit" class="btn btn-primary">Actualizar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<% include footer %>
